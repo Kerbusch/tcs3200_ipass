@@ -61,4 +61,8 @@ public:
             switch_check = false;
         }
     }
+
+    void update_color(const rgb& update){
+        color = update;
+    }
 };
