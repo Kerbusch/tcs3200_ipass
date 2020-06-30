@@ -1,0 +1,214 @@
+\hypertarget{classtcs3200}{}\section{tcs3200 Class Reference}
+\label{classtcs3200}\index{tcs3200@{tcs3200}}
+
+
+T\+C\+S3200 sensor.  
+
+
+
+
+{\ttfamily \#include $<$tcs3200.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtcs3200_a13e30ee8c4783f1db994fc2cb67e66f3}{tcs3200} (hwlib\+::target\+::pin\+\_\+out \&s0\+\_\+, hwlib\+::target\+::pin\+\_\+out \&s1\+\_\+, hwlib\+::target\+::pin\+\_\+out \&s2\+\_\+, hwlib\+::target\+::pin\+\_\+out \&s3\+\_\+, hwlib\+::target\+::pin\+\_\+in \&sensor\+\_\+out\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{classtcs3200}{tcs3200} class. \end{DoxyCompactList}\item 
+int \hyperlink{classtcs3200_a632de7a9235551be40c92c270eb71c99}{read\+\_\+red} ()
+\begin{DoxyCompactList}\small\item\em Reads the red color as an int. \end{DoxyCompactList}\item 
+int \hyperlink{classtcs3200_aab1dcfd5721bd9b8fb4b749e72cefad9}{read\+\_\+green} ()
+\begin{DoxyCompactList}\small\item\em Reads the green color as an int. \end{DoxyCompactList}\item 
+int \hyperlink{classtcs3200_a3601b40b4b7f40625e9e1acb4cb0f7ff}{read\+\_\+blue} ()
+\begin{DoxyCompactList}\small\item\em Reads the blue color as an int. \end{DoxyCompactList}\item 
+void \hyperlink{classtcs3200_a6dbd5dccc83337cf3cc14b8fe197aed5}{off} ()
+\begin{DoxyCompactList}\small\item\em Turns off the sensor. \end{DoxyCompactList}\item 
+bool \hyperlink{classtcs3200_ae3eef94d71082b2076be2d600bd3f3fb}{check} (const \hyperlink{structrgb}{rgb} \&color)
+\begin{DoxyCompactList}\small\item\em Checks the color to a rgb variable. \end{DoxyCompactList}\item 
+\hyperlink{structrgb}{rgb} \hyperlink{classtcs3200_ad2d5daf026a53178ea90f62f7f8b0adb}{read\+\_\+rgb} ()
+\begin{DoxyCompactList}\small\item\em Reads the color as a rgb variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtcs3200_a1fb089f013074ad2adba1eeb916350db}\label{classtcs3200_a1fb089f013074ad2adba1eeb916350db}} 
+int \hyperlink{classtcs3200_a1fb089f013074ad2adba1eeb916350db}{accuracy} = 10
+\begin{DoxyCompactList}\small\item\em accuracy variable for \hyperlink{classtcs3200_ae3eef94d71082b2076be2d600bd3f3fb}{check()}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtcs3200_a02b9d9553e97b38bd3aab87bc5ea84b2}{read} ()
+\begin{DoxyCompactList}\small\item\em Read funtion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtcs3200_a846f95dec52105ab59a296fc67c20dcf}\label{classtcs3200_a846f95dec52105ab59a296fc67c20dcf}} 
+hwlib\+::pin\+\_\+direct\+\_\+from\+\_\+out\+\_\+t \hyperlink{classtcs3200_a846f95dec52105ab59a296fc67c20dcf}{s0}
+\begin{DoxyCompactList}\small\item\em s0 variable using pin\+\_\+out from hwlib P\+R\+I\+V\+A\+TE \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtcs3200_abfbf91180c3608fd9bb54719123923a4}\label{classtcs3200_abfbf91180c3608fd9bb54719123923a4}} 
+hwlib\+::pin\+\_\+direct\+\_\+from\+\_\+out\+\_\+t \hyperlink{classtcs3200_abfbf91180c3608fd9bb54719123923a4}{s1}
+\begin{DoxyCompactList}\small\item\em s1 variable using pin\+\_\+out from hwlib P\+R\+I\+V\+A\+TE \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtcs3200_a1a1db3ebd11d9fb7cd01e20eacace27c}\label{classtcs3200_a1a1db3ebd11d9fb7cd01e20eacace27c}} 
+hwlib\+::pin\+\_\+direct\+\_\+from\+\_\+out\+\_\+t \hyperlink{classtcs3200_a1a1db3ebd11d9fb7cd01e20eacace27c}{s2}
+\begin{DoxyCompactList}\small\item\em s2 variable using pin\+\_\+out from hwlib P\+R\+I\+V\+A\+TE \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtcs3200_abf50b62964b73ad7383bc0f7dd383ccc}\label{classtcs3200_abf50b62964b73ad7383bc0f7dd383ccc}} 
+hwlib\+::pin\+\_\+direct\+\_\+from\+\_\+out\+\_\+t \hyperlink{classtcs3200_abf50b62964b73ad7383bc0f7dd383ccc}{s3}
+\begin{DoxyCompactList}\small\item\em s3 variable using pin\+\_\+out from hwlib P\+R\+I\+V\+A\+TE \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtcs3200_a522640671fdac5ab30f08363cd6306aa}\label{classtcs3200_a522640671fdac5ab30f08363cd6306aa}} 
+hwlib\+::pin\+\_\+direct\+\_\+from\+\_\+in\+\_\+t \hyperlink{classtcs3200_a522640671fdac5ab30f08363cd6306aa}{sensor\+\_\+out}
+\begin{DoxyCompactList}\small\item\em sensor\+\_\+out variable using pin\+\_\+in from hwlib P\+R\+I\+V\+A\+TE \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+C\+S3200 sensor. 
+
+This class is made for the T\+C\+S3200 color sensor. The T\+C\+S3200 outputs a square wave with differing frequency. ~\newline
+  ~\newline
+  ~\newline
+ The T\+C\+S3200 has a current to frequency converter build in. ~\newline
+ This class uses that frequency to convert it back to the color value. ~\newline
+ ~\newline
+ Link to the \href{https://www.mouser.com/catalog/specsheets/tcs3200-e11.pdf}{\tt T\+C\+S3200 Datasheet} \begin{DoxySeeAlso}{See also}
+\hyperlink{structrgb}{rgb} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtcs3200_a13e30ee8c4783f1db994fc2cb67e66f3}\label{classtcs3200_a13e30ee8c4783f1db994fc2cb67e66f3}} 
+\index{tcs3200@{tcs3200}!tcs3200@{tcs3200}}
+\index{tcs3200@{tcs3200}!tcs3200@{tcs3200}}
+\subsubsection{\texorpdfstring{tcs3200()}{tcs3200()}}
+{\footnotesize\ttfamily tcs3200\+::tcs3200 (\begin{DoxyParamCaption}\item[{hwlib\+::target\+::pin\+\_\+out \&}]{s0\+\_\+,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{s1\+\_\+,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{s2\+\_\+,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{s3\+\_\+,  }\item[{hwlib\+::target\+::pin\+\_\+in \&}]{sensor\+\_\+out\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of the \hyperlink{classtcs3200}{tcs3200} class. 
+
+This constructor sets the pins as members and sets the chip\textquotesingle{}s frequency scaler to 20\%. 
+\begin{DoxyParams}{Parameters}
+{\em s0\+\_\+} & This is a hwlib\+::target\+::pin\+\_\+out for the s0 pin on the sensor. \\
+\hline
+{\em s1\+\_\+} & This is a hwlib\+::target\+::pin\+\_\+out for the s1 pin on the sensor. \\
+\hline
+{\em s2\+\_\+} & This is a hwlib\+::target\+::pin\+\_\+out for the s2 pin on the sensor. \\
+\hline
+{\em s3\+\_\+} & This is a hwlib\+::target\+::pin\+\_\+out for the s3 pin on the sensor. \\
+\hline
+{\em sensor\+\_\+out\+\_\+} & This is a hwlib\+::target\+::pin\+\_\+in for the sensor\+\_\+out pin on the sensor. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtcs3200_ae3eef94d71082b2076be2d600bd3f3fb}\label{classtcs3200_ae3eef94d71082b2076be2d600bd3f3fb}} 
+\index{tcs3200@{tcs3200}!check@{check}}
+\index{check@{check}!tcs3200@{tcs3200}}
+\subsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily bool tcs3200\+::check (\begin{DoxyParamCaption}\item[{const \hyperlink{structrgb}{rgb} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks the color to a rgb variable. 
+
+This funtion checks the sensor data to the given rgb variable. 
+\begin{DoxyParams}{Parameters}
+{\em color} & This is a rgb variable used for the check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A rgb variable 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This class has a variable called accuracy, The default = 10, this can be changed by changing the accuracy variable. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtcs3200_a632de7a9235551be40c92c270eb71c99}{read\+\_\+red()}, \hyperlink{classtcs3200_aab1dcfd5721bd9b8fb4b749e72cefad9}{read\+\_\+green()}, \hyperlink{classtcs3200_a3601b40b4b7f40625e9e1acb4cb0f7ff}{read\+\_\+blue()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classtcs3200_a6dbd5dccc83337cf3cc14b8fe197aed5}\label{classtcs3200_a6dbd5dccc83337cf3cc14b8fe197aed5}} 
+\index{tcs3200@{tcs3200}!off@{off}}
+\index{off@{off}!tcs3200@{tcs3200}}
+\subsubsection{\texorpdfstring{off()}{off()}}
+{\footnotesize\ttfamily void tcs3200\+::off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Turns off the sensor. 
+
+This funtion sets s0 and s1 to false. This means that the sensor goes into sleep mode. \mbox{\Hypertarget{classtcs3200_a02b9d9553e97b38bd3aab87bc5ea84b2}\label{classtcs3200_a02b9d9553e97b38bd3aab87bc5ea84b2}} 
+\index{tcs3200@{tcs3200}!read@{read}}
+\index{read@{read}!tcs3200@{tcs3200}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int tcs3200\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Read funtion. 
+
+Reads the output of the sensor. This funtion does nothing if the sensor is in sleep mode. \begin{DoxyReturn}{Returns}
+Frequency (in ns) as an int. 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+This funtion is private and can only be used by the read funtions of the individual colors. 
+\end{DoxyAttention}
+\mbox{\Hypertarget{classtcs3200_a3601b40b4b7f40625e9e1acb4cb0f7ff}\label{classtcs3200_a3601b40b4b7f40625e9e1acb4cb0f7ff}} 
+\index{tcs3200@{tcs3200}!read\+\_\+blue@{read\+\_\+blue}}
+\index{read\+\_\+blue@{read\+\_\+blue}!tcs3200@{tcs3200}}
+\subsubsection{\texorpdfstring{read\+\_\+blue()}{read\_blue()}}
+{\footnotesize\ttfamily int tcs3200\+::read\+\_\+blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads the blue color as an int. 
+
+Reads the sensor for the blue color. The return is an average of 5 runs. \begin{DoxyReturn}{Returns}
+Frequency (in ns) as an int. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtcs3200_a02b9d9553e97b38bd3aab87bc5ea84b2}{read()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classtcs3200_aab1dcfd5721bd9b8fb4b749e72cefad9}\label{classtcs3200_aab1dcfd5721bd9b8fb4b749e72cefad9}} 
+\index{tcs3200@{tcs3200}!read\+\_\+green@{read\+\_\+green}}
+\index{read\+\_\+green@{read\+\_\+green}!tcs3200@{tcs3200}}
+\subsubsection{\texorpdfstring{read\+\_\+green()}{read\_green()}}
+{\footnotesize\ttfamily int tcs3200\+::read\+\_\+green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads the green color as an int. 
+
+Reads the sensor for the green color. The return is an average of 5 runs. \begin{DoxyReturn}{Returns}
+Frequency (in ns) as an int. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtcs3200_a02b9d9553e97b38bd3aab87bc5ea84b2}{read()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classtcs3200_a632de7a9235551be40c92c270eb71c99}\label{classtcs3200_a632de7a9235551be40c92c270eb71c99}} 
+\index{tcs3200@{tcs3200}!read\+\_\+red@{read\+\_\+red}}
+\index{read\+\_\+red@{read\+\_\+red}!tcs3200@{tcs3200}}
+\subsubsection{\texorpdfstring{read\+\_\+red()}{read\_red()}}
+{\footnotesize\ttfamily int tcs3200\+::read\+\_\+red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads the red color as an int. 
+
+Reads the sensor for the red color. The return is an average of 5 runs. \begin{DoxyReturn}{Returns}
+Frequency (in ns) as an int. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtcs3200_a02b9d9553e97b38bd3aab87bc5ea84b2}{read()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classtcs3200_ad2d5daf026a53178ea90f62f7f8b0adb}\label{classtcs3200_ad2d5daf026a53178ea90f62f7f8b0adb}} 
+\index{tcs3200@{tcs3200}!read\+\_\+rgb@{read\+\_\+rgb}}
+\index{read\+\_\+rgb@{read\+\_\+rgb}!tcs3200@{tcs3200}}
+\subsubsection{\texorpdfstring{read\+\_\+rgb()}{read\_rgb()}}
+{\footnotesize\ttfamily \hyperlink{structrgb}{rgb} tcs3200\+::read\+\_\+rgb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads the color as a rgb variable. 
+
+This funtion reads the color of the sensor and returns the colors as a rgb variable. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+tcs3200.\+hpp\item 
+tcs3200.\+cpp\end{DoxyCompactItemize}

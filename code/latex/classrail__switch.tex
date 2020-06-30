@@ -1,0 +1,88 @@
+\hypertarget{classrail__switch}{}\section{rail\+\_\+switch Class Reference}
+\label{classrail__switch}\index{rail\+\_\+switch@{rail\+\_\+switch}}
+
+
+class for controlling a model train switch  
+
+
+
+
+{\ttfamily \#include $<$rail\+\_\+switch.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrail__switch_a6104011a15d2d10247fd72a7786f5498}{rail\+\_\+switch} (hwlib\+::target\+::pin\+\_\+out \&pin0\+\_\+, hwlib\+::target\+::pin\+\_\+out \&pin1\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{classrail__switch}{rail\+\_\+switch} class. \end{DoxyCompactList}\item 
+void \hyperlink{classrail__switch_af6eb3f3e9dfe74d59d51d7b1d15a0e36}{straight} ()
+\begin{DoxyCompactList}\small\item\em Makes the switch go straight. \end{DoxyCompactList}\item 
+void \hyperlink{classrail__switch_afbd68a5d9669f2bb67df86c51f9d478b}{other\+\_\+direction} ()
+\begin{DoxyCompactList}\small\item\em Makes the switch go the other direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrail__switch_aa2a6e401f815d2f45f1281e898b9de9a}\label{classrail__switch_aa2a6e401f815d2f45f1281e898b9de9a}} 
+hwlib\+::pin\+\_\+direct\+\_\+from\+\_\+out\+\_\+t \hyperlink{classrail__switch_aa2a6e401f815d2f45f1281e898b9de9a}{pin0}
+\begin{DoxyCompactList}\small\item\em Pin used for making the switch go straight. P\+R\+I\+V\+A\+TE. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrail__switch_a0d5ab573e3393fc32572b1f5edcaf8d9}\label{classrail__switch_a0d5ab573e3393fc32572b1f5edcaf8d9}} 
+hwlib\+::pin\+\_\+direct\+\_\+from\+\_\+out\+\_\+t \hyperlink{classrail__switch_a0d5ab573e3393fc32572b1f5edcaf8d9}{pin1}
+\begin{DoxyCompactList}\small\item\em Pin used for making the switch go the other direction. P\+R\+I\+V\+A\+TE. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrail__switch_a2cdc7336f85678809cb0b5a1485c7c86}\label{classrail__switch_a2cdc7336f85678809cb0b5a1485c7c86}} 
+bool \hyperlink{classrail__switch_a2cdc7336f85678809cb0b5a1485c7c86}{heading} = false
+\begin{DoxyCompactList}\small\item\em Boolian that makes sure that the swicht can\textquotesingle{}t go in 2 directions P\+R\+I\+V\+A\+TE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class for controlling a model train switch 
+
+This class is used for controlling the solenoid int the switch of a model train. ~\newline
+ The funtions have time limters so the solenoid wont burn out. ~\newline
+ ~\newline
+ The output of the arduino pins can be used with a transistor if you have a DC switch. otherwise it can be used with relays. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrail__switch_a6104011a15d2d10247fd72a7786f5498}\label{classrail__switch_a6104011a15d2d10247fd72a7786f5498}} 
+\index{rail\+\_\+switch@{rail\+\_\+switch}!rail\+\_\+switch@{rail\+\_\+switch}}
+\index{rail\+\_\+switch@{rail\+\_\+switch}!rail\+\_\+switch@{rail\+\_\+switch}}
+\subsubsection{\texorpdfstring{rail\+\_\+switch()}{rail\_switch()}}
+{\footnotesize\ttfamily rail\+\_\+switch\+::rail\+\_\+switch (\begin{DoxyParamCaption}\item[{hwlib\+::target\+::pin\+\_\+out \&}]{pin0\+\_\+,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{pin1\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of the \hyperlink{classrail__switch}{rail\+\_\+switch} class. 
+
+This constructor sets the pins as members and \textquotesingle{}resets\textquotesingle{} the switch. 
+\begin{DoxyParams}{Parameters}
+{\em pin0\+\_\+} & This is a hwlib\+::target\+::pin\+\_\+out for going straight. \\
+\hline
+{\em pin1\+\_\+} & This is a hwlib\+::target\+::pin\+\_\+out for going the other direction. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrail__switch_afbd68a5d9669f2bb67df86c51f9d478b}\label{classrail__switch_afbd68a5d9669f2bb67df86c51f9d478b}} 
+\index{rail\+\_\+switch@{rail\+\_\+switch}!other\+\_\+direction@{other\+\_\+direction}}
+\index{other\+\_\+direction@{other\+\_\+direction}!rail\+\_\+switch@{rail\+\_\+switch}}
+\subsubsection{\texorpdfstring{other\+\_\+direction()}{other\_direction()}}
+{\footnotesize\ttfamily void rail\+\_\+switch\+::other\+\_\+direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Makes the switch go the other direction. 
+
+This funtion makes the switch go the other direction by activating the pin for 0.\+4 seconds. This is to make sure that the solenoid doesn\textquotesingle{}t burn out. \mbox{\Hypertarget{classrail__switch_af6eb3f3e9dfe74d59d51d7b1d15a0e36}\label{classrail__switch_af6eb3f3e9dfe74d59d51d7b1d15a0e36}} 
+\index{rail\+\_\+switch@{rail\+\_\+switch}!straight@{straight}}
+\index{straight@{straight}!rail\+\_\+switch@{rail\+\_\+switch}}
+\subsubsection{\texorpdfstring{straight()}{straight()}}
+{\footnotesize\ttfamily void rail\+\_\+switch\+::straight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Makes the switch go straight. 
+
+This funtion makes the switch go straight by activating the pin for 0.\+4 seconds. This is to make sure that the solenoid doesn\textquotesingle{}t burn out. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+rail\+\_\+switch.\+hpp\end{DoxyCompactItemize}
