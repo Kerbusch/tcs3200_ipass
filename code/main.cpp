@@ -54,5 +54,4 @@ int main( void ){
         //uncomment the next line if you want to show the output of the chip
         //hwlib::cout << chip.read_red() << " " << chip.read_green() << " " << chip.read_blue() << "\n";
     }
-    
 }

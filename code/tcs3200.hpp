@@ -1,7 +1,6 @@
 #pragma once //only include once
 #include "hwlib.hpp"
 
-
 /// @brief This stuct contains the ints of the color.
 /// @details This struct contains the int of the color. It is used with the tcs3200 class to check if the input from the sensos is roughly the same as the rgb input.
 struct rgb{
