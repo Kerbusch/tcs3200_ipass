@@ -33,7 +33,7 @@ private:
     /// @details Reads the output of the sensor. This funtion does nothing if the sensor is in sleep mode.
     /// @returns Frequency (in ns) as an int.
     /// @attention This funtion is private and can only be used by the read funtions of the individual colors.
-    int read(){//inbouwen van een failsafe!!! -----------------------------------------------------------------------------------------------------------------------------
+    int read(){
         int i = 0;
         bool x = true, y = false, start = true;
         while(x){
@@ -51,6 +51,9 @@ private:
             }
             if(sensor_out.read() == false && y){
                 y = false;
+            }
+            if(i > 10000){ //fail safe
+                x = false;
             }
             i++;
             hwlib::wait_us(1);
