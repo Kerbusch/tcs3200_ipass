@@ -158,6 +158,7 @@ public:
 
     /// @brief Reads the color as a rgb variable.
     /// @details This funtion reads the color of the sensor and returns the colors as a rgb variable.
+    /// @see rgb
     rgb read_rgb(){
         rgb tmp = {read_red(),read_green(),read_blue()};
         return tmp;

@@ -62,6 +62,9 @@ public:
         }
     }
 
+    /// @brief Update color
+    /// @details This funtion Updates the color variable using a rgb value.
+    /// @param update This rgb value sets the color to the update value.
     void update_color(const rgb& update){
         color = update;
     }

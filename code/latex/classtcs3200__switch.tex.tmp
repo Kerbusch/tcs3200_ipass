@@ -21,7 +21,9 @@ Collaboration diagram for tcs3200\+\_\+switch\+:
 void \hyperlink{classtcs3200__switch_a5909fd81a1e61c10df8514825749625a}{start} ()
 \begin{DoxyCompactList}\small\item\em Start funtion. \end{DoxyCompactList}\item 
 void \hyperlink{classtcs3200__switch_a12fbbb7809c16d87fca8e92ef905e14b}{start\+\_\+with\+\_\+external\+\_\+loop} ()
-\begin{DoxyCompactList}\small\item\em 2nd Start funtion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 2nd Start funtion. \end{DoxyCompactList}\item 
+void \hyperlink{classtcs3200__switch_aaf7221f303cb22b5f3ac9ff749023abb}{update\+\_\+color} (const \hyperlink{structrgb}{rgb} \&update)
+\begin{DoxyCompactList}\small\item\em Update color. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -117,6 +119,21 @@ This funtion starts the comparting of the color to the sensor and switch accordi
  \begin{DoxyNote}{Note}
 This class has a variable called wait\+\_\+time, The default = 4000 (in mili seconds), this can be changed by changing the wait\+\_\+time variable. 
 \end{DoxyNote}
+\mbox{\Hypertarget{classtcs3200__switch_aaf7221f303cb22b5f3ac9ff749023abb}\label{classtcs3200__switch_aaf7221f303cb22b5f3ac9ff749023abb}} 
+\index{tcs3200\+\_\+switch@{tcs3200\+\_\+switch}!update\+\_\+color@{update\+\_\+color}}
+\index{update\+\_\+color@{update\+\_\+color}!tcs3200\+\_\+switch@{tcs3200\+\_\+switch}}
+\subsubsection{\texorpdfstring{update\+\_\+color()}{update\_color()}}
+{\footnotesize\ttfamily void tcs3200\+\_\+switch\+::update\+\_\+color (\begin{DoxyParamCaption}\item[{const \hyperlink{structrgb}{rgb} \&}]{update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update color. 
+
+This funtion Updates the color variable using a rgb value. 
+\begin{DoxyParams}{Parameters}
+{\em update} & This rgb value sets the color to the update value. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

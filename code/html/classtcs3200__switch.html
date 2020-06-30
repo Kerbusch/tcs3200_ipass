@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TCS3200 HWLIB
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Libary for the tcs3200 with hwlib</div>
   </td>
@@ -123,6 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a12fbbb7809c16d87fca8e92ef905e14b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtcs3200__switch.html#a12fbbb7809c16d87fca8e92ef905e14b">start_with_external_loop</a> ()</td></tr>
 <tr class="memdesc:a12fbbb7809c16d87fca8e92ef905e14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">2nd Start funtion.  <a href="#a12fbbb7809c16d87fca8e92ef905e14b">More...</a><br /></td></tr>
 <tr class="separator:a12fbbb7809c16d87fca8e92ef905e14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7221f303cb22b5f3ac9ff749023abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtcs3200__switch.html#aaf7221f303cb22b5f3ac9ff749023abb">update_color</a> (const <a class="el" href="structrgb.html">rgb</a> &amp;update)</td></tr>
+<tr class="memdesc:aaf7221f303cb22b5f3ac9ff749023abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update color.  <a href="#aaf7221f303cb22b5f3ac9ff749023abb">More...</a><br /></td></tr>
+<tr class="separator:aaf7221f303cb22b5f3ac9ff749023abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -265,6 +268,40 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>2nd Start funtion. </p>
 <p>This funtion starts the comparting of the color to the sensor and switch accordingly without an internal loop. ### Example with more than 1 switch: </p><div class="fragment"><div class="line"><span class="keywordflow">while</span>(<span class="keyword">true</span>){</div><div class="line">    tcs3200_switch1.ststart_with_external_loop();</div><div class="line">    tcs3200_switch2.ststart_with_external_loop();</div><div class="line">    tcs3200_switch3.ststart_with_external_loop();</div><div class="line">}</div></div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>This class has a variable called wait_time, The default = 4000 (in mili seconds), this can be changed by changing the wait_time variable. </dd></dl>
+
+</div>
+</div>
+<a id="aaf7221f303cb22b5f3ac9ff749023abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf7221f303cb22b5f3ac9ff749023abb">&#9670;&nbsp;</a></span>update_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tcs3200_switch::update_color </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structrgb.html">rgb</a> &amp;&#160;</td>
+          <td class="paramname"><em>update</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update color. </p>
+<p>This funtion Updates the color variable using a rgb value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">update</td><td>This rgb value sets the color to the update value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
