@@ -9,6 +9,129 @@ Layer between the \hyperlink{classtcs3200}{tcs3200} class and the \hyperlink{cla
 
 {\ttfamily \#include $<$tcs3200\+\_\+switch.\+hpp$>$}
 
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtcs3200__switch_a30625561212b744877df9c266c82dbc8}{tcs3200\+\_\+switch} (\hyperlink{classtcs3200}{tcs3200} \&chip\+\_\+, \hyperlink{classrail__switch}{rail\+\_\+switch} \&s\+\_\+, const \hyperlink{structrgb}{rgb} \&color\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{classtcs3200__switch}{tcs3200\+\_\+switch} class. \end{DoxyCompactList}\item 
+void \hyperlink{classtcs3200__switch_a5909fd81a1e61c10df8514825749625a}{start} ()
+\begin{DoxyCompactList}\small\item\em Start funtion. \end{DoxyCompactList}\item 
+void \hyperlink{classtcs3200__switch_a12fbbb7809c16d87fca8e92ef905e14b}{start\+\_\+with\+\_\+external\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em 2nd Start funtion. \end{DoxyCompactList}\item 
+void \hyperlink{classtcs3200__switch_aaf7221f303cb22b5f3ac9ff749023abb}{update\+\_\+color} (const \hyperlink{structrgb}{rgb} \&update)
+\begin{DoxyCompactList}\small\item\em Update color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtcs3200__switch_ab937a90ce3513fecc1321b9eb1f3fbd0}\label{classtcs3200__switch_ab937a90ce3513fecc1321b9eb1f3fbd0}} 
+int \hyperlink{classtcs3200__switch_ab937a90ce3513fecc1321b9eb1f3fbd0}{wait\+\_\+time} = 4000
+\begin{DoxyCompactList}\small\item\em wait\+\_\+time variable for \hyperlink{classtcs3200__switch_a5909fd81a1e61c10df8514825749625a}{start()}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtcs3200__switch_ac046564d5df1fcc14c14595ea112d6bd}\label{classtcs3200__switch_ac046564d5df1fcc14c14595ea112d6bd}} 
+\hyperlink{classtcs3200}{tcs3200} \& \hyperlink{classtcs3200__switch_ac046564d5df1fcc14c14595ea112d6bd}{chip}
+\begin{DoxyCompactList}\small\item\em chip variable using \hyperlink{classtcs3200}{tcs3200} class \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtcs3200__switch_a26f8df2b7ec84ed9198719b861e84462}\label{classtcs3200__switch_a26f8df2b7ec84ed9198719b861e84462}} 
+\hyperlink{classrail__switch}{rail\+\_\+switch} \& \hyperlink{classtcs3200__switch_a26f8df2b7ec84ed9198719b861e84462}{s}
+\begin{DoxyCompactList}\small\item\em s variable using \hyperlink{classrail__switch}{rail\+\_\+switch} class \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtcs3200__switch_aca9f689e68434a94624286ca7f57d0d7}\label{classtcs3200__switch_aca9f689e68434a94624286ca7f57d0d7}} 
+\hyperlink{structrgb}{rgb} \hyperlink{classtcs3200__switch_aca9f689e68434a94624286ca7f57d0d7}{color}
+\begin{DoxyCompactList}\small\item\em color variable using rgb struct \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtcs3200__switch_a11074876e7e0149b847486c69e06cffc}\label{classtcs3200__switch_a11074876e7e0149b847486c69e06cffc}} 
+bool \hyperlink{classtcs3200__switch_a11074876e7e0149b847486c69e06cffc}{switch\+\_\+check} = false
+\begin{DoxyCompactList}\small\item\em switch\+\_\+check variable \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-Collaboration diagram for tcs3200\+\_\+switch\+:
+\subsection{Detailed Description}
+Layer between the \hyperlink{classtcs3200}{tcs3200} class and the \hyperlink{classrail__switch}{rail\+\_\+switch} class. 
+
+This class is the funtioning layer between the \hyperlink{classtcs3200}{tcs3200} and the \hyperlink{classrail__switch}{rail\+\_\+switch}. ~\newline
+ ~\newline
+ The \hyperlink{classtcs3200}{tcs3200} reads the color. The code compairs this with the given rgb stuct. ~\newline
+ If the color is close enough the switch wil change from going straight to going to the other direction. ~\newline
+ If the time has passed and the color is no longer the samen then the switch wil return to going straight. \begin{DoxySeeAlso}{See also}
+\hyperlink{classtcs3200}{tcs3200}, \hyperlink{classrail__switch}{rail\+\_\+switch} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtcs3200__switch_a30625561212b744877df9c266c82dbc8}\label{classtcs3200__switch_a30625561212b744877df9c266c82dbc8}} 
+\index{tcs3200\+\_\+switch@{tcs3200\+\_\+switch}!tcs3200\+\_\+switch@{tcs3200\+\_\+switch}}
+\index{tcs3200\+\_\+switch@{tcs3200\+\_\+switch}!tcs3200\+\_\+switch@{tcs3200\+\_\+switch}}
+\subsubsection{\texorpdfstring{tcs3200\+\_\+switch()}{tcs3200\_switch()}}
+{\footnotesize\ttfamily tcs3200\+\_\+switch\+::tcs3200\+\_\+switch (\begin{DoxyParamCaption}\item[{\hyperlink{classtcs3200}{tcs3200} \&}]{chip\+\_\+,  }\item[{\hyperlink{classrail__switch}{rail\+\_\+switch} \&}]{s\+\_\+,  }\item[{const \hyperlink{structrgb}{rgb} \&}]{color\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of the \hyperlink{classtcs3200__switch}{tcs3200\+\_\+switch} class. 
+
+This constructor puts the chip, switch and color into the members. 
+\begin{DoxyParams}{Parameters}
+{\em chip\+\_\+} & This is a \hyperlink{classtcs3200}{tcs3200} class. \\
+\hline
+{\em s\+\_\+} & This is the switch that wil be used. \\
+\hline
+{\em color\+\_\+} & This is the color for the switching. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtcs3200__switch_a5909fd81a1e61c10df8514825749625a}\label{classtcs3200__switch_a5909fd81a1e61c10df8514825749625a}} 
+\index{tcs3200\+\_\+switch@{tcs3200\+\_\+switch}!start@{start}}
+\index{start@{start}!tcs3200\+\_\+switch@{tcs3200\+\_\+switch}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void tcs3200\+\_\+switch\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Start funtion. 
+
+This funtion starts the comparting of the color to the sensor and switch accordingly. \begin{DoxyNote}{Note}
+This uses a internal while loop, which makes it so you cant do anything else. For using more than 1 switch or ding other things i recomend using \hyperlink{classtcs3200__switch_a12fbbb7809c16d87fca8e92ef905e14b}{start\+\_\+with\+\_\+external\+\_\+loop()}. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtcs3200__switch_a12fbbb7809c16d87fca8e92ef905e14b}{start\+\_\+with\+\_\+external\+\_\+loop()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classtcs3200__switch_a12fbbb7809c16d87fca8e92ef905e14b}\label{classtcs3200__switch_a12fbbb7809c16d87fca8e92ef905e14b}} 
+\index{tcs3200\+\_\+switch@{tcs3200\+\_\+switch}!start\+\_\+with\+\_\+external\+\_\+loop@{start\+\_\+with\+\_\+external\+\_\+loop}}
+\index{start\+\_\+with\+\_\+external\+\_\+loop@{start\+\_\+with\+\_\+external\+\_\+loop}!tcs3200\+\_\+switch@{tcs3200\+\_\+switch}}
+\subsubsection{\texorpdfstring{start\+\_\+with\+\_\+external\+\_\+loop()}{start\_with\_external\_loop()}}
+{\footnotesize\ttfamily void tcs3200\+\_\+switch\+::start\+\_\+with\+\_\+external\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+2nd Start funtion. 
+
+This funtion starts the comparting of the color to the sensor and switch accordingly without an internal loop. \#\#\# Example with more than 1 switch\+: 
+\begin{DoxyCode}
+\textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{
+    tcs3200\_switch1.ststart\_with\_external\_loop();
+    tcs3200\_switch2.ststart\_with\_external\_loop();
+    tcs3200\_switch3.ststart\_with\_external\_loop();
+\}
+\end{DoxyCode}
+ \begin{DoxyNote}{Note}
+This class has a variable called wait\+\_\+time, The default = 4000 (in mili seconds), this can be changed by changing the wait\+\_\+time variable. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classtcs3200__switch_aaf7221f303cb22b5f3ac9ff749023abb}\label{classtcs3200__switch_aaf7221f303cb22b5f3ac9ff749023abb}} 
+\index{tcs3200\+\_\+switch@{tcs3200\+\_\+switch}!update\+\_\+color@{update\+\_\+color}}
+\index{update\+\_\+color@{update\+\_\+color}!tcs3200\+\_\+switch@{tcs3200\+\_\+switch}}
+\subsubsection{\texorpdfstring{update\+\_\+color()}{update\_color()}}
+{\footnotesize\ttfamily void tcs3200\+\_\+switch\+::update\+\_\+color (\begin{DoxyParamCaption}\item[{const \hyperlink{structrgb}{rgb} \&}]{update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update color. 
+
+This funtion Updates the color variable using a rgb value. 
+\begin{DoxyParams}{Parameters}
+{\em update} & This rgb value sets the color to the update value. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tcs3200\+\_\+switch.\+hpp\end{DoxyCompactItemize}

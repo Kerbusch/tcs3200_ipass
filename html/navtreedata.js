@@ -3,6 +3,7 @@ var NAVTREE =
   [ "TCS3200 HWLIB", "index.html", [
     [ "Introduction", "index.html", null ],
     [ "HWLIB", "HWLIB.html", null ],
+    [ "tcs3200_ipass", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
