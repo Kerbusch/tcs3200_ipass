@@ -47,7 +47,7 @@ int main( void ){
             wagon0 = chip.read_rgb();
             color_switch0.update_color(wagon0);
         }
-        if(but1.read()){
+        if(but1.read()){ //change color if the button is pressed
             wagon1 = chip.read_rgb();
             color_switch1.update_color(wagon1);
         }
